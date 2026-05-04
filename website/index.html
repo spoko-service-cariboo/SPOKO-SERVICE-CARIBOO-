@@ -8,35 +8,75 @@
   <meta name="keywords" content="painting Quesnel BC, fencing Quesnel, landscaping Quesnel BC, gutter cleaning, pressure washing, property services Cariboo">
   <link rel="canonical" href="https://cariboo.services/">
   <meta property="og:title" content="Spoko Service Cariboo — Property Services in Quesnel, BC">
-  <meta property="og:description" content="Painting, fencing, landscaping, gutter cleaning. Insured & WorkSafeBC covered. Free quotes.">
+  <meta property="og:description" content="Painting, fencing, landscaping, gutter cleaning. Insured &amp; WorkSafeBC covered. Free quotes.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://cariboo.services/">
   <meta property="og:image" content="https://cariboo.services/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Spoko Service Cariboo — Property Services in Quesnel, BC">
+  <meta name="twitter:description" content="Painting, fencing, landscaping, gutter cleaning. Insured &amp; WorkSafeBC covered. Free quotes.">
+  <meta name="twitter:image" content="https://cariboo.services/images/og-image.jpg">
   <link rel="icon" type="image/svg+xml" href="images/logo-white.svg">
   <link rel="stylesheet" href="style.css">
 
-  <!-- Schema.org LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": "https://cariboo.services/#business",
     "name": "Spoko Service Cariboo",
-    "description": "Property maintenance services including painting, fencing, landscaping, gutter cleaning and pressure washing in Quesnel and the Cariboo region.",
     "url": "https://cariboo.services",
     "telephone": "+12509257372",
     "email": "spokoservicecariboo@gmail.com",
+    "image": "https://cariboo.services/images/og-image.jpg",
+    "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "17135 Olson Rd",
       "addressLocality": "Hixon",
       "addressRegion": "BC",
       "postalCode": "V0K 1S1",
       "addressCountry": "CA"
     },
-    "areaServed": ["Quesnel", "Hixon", "Cariboo Regional District"],
-    "serviceType": ["Painting", "Fencing", "Landscaping", "Gutter Cleaning", "Pressure Washing", "Labour Assistance"],
-    "paymentAccepted": "Interac e-Transfer, Direct Deposit",
-    "sameAs": ["https://www.facebook.com/spokoservice/"]
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "53.4167",
+      "longitude": "-122.6"
+    },
+    "areaServed": [
+      {"@type": "City", "name": "Quesnel"},
+      {"@type": "City", "name": "Hixon"},
+      {"@type": "City", "name": "Williams Lake"},
+      {"@type": "City", "name": "Prince George"},
+      {"@type": "AdministrativeArea", "name": "Cariboo Regional District"}
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/spokoservice"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Property Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Interior Painting"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Exterior Painting"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fence Installation"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fence Repair"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gutter Cleaning"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Roof Cleaning"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pressure Washing"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Window Washing"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Yard Cleanup"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Light Landscaping"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Labour Assistance"}}
+      ]
+    }
   }
   </script>
 </head>
@@ -45,20 +85,20 @@
   <!-- ====== HEADER ====== -->
   <header class="site-header">
     <nav class="nav-wrap">
-      <a href="index.html" class="nav-logo">
+      <a href="/" class="nav-logo">
         <img src="images/logo-white.svg" alt="Spoko Service Cariboo" width="160" height="48">
       </a>
       <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
       <div class="nav-links">
-        <a href="index.html" class="active">Home</a>
-        <a href="painting.html">Painting</a>
-        <a href="fencing.html">Fencing</a>
-        <a href="landscaping.html">Landscaping</a>
-        <a href="gutter-cleaning.html">Roof & Gutter</a>
-        <a href="labour.html">Labour</a>
-        <a href="contact.html">Contact</a>
+        <a href="/" class="active">Home</a>
+        <a href="/painting">Painting</a>
+        <a href="/fencing">Fencing</a>
+        <a href="/landscaping">Landscaping</a>
+        <a href="/gutter-cleaning">Roof & Gutter</a>
+        <a href="/labour">Labour</a>
+        <a href="/contact">Contact</a>
         <a href="tel:2509257372" class="nav-phone">&#128222; (250) 925-7372</a>
       </div>
     </nav>
@@ -77,12 +117,12 @@
             <span class="hero-badge">✓ Free Quotes</span>
           </div>
           <div class="btn-group">
-            <a href="contact.html" class="btn btn-yellow">Get a Free Quote</a>
+            <a href="/contact" class="btn btn-yellow">Get a Free Quote</a>
             <a href="tel:2509257372" class="btn btn-outline">Call (250) 925-7372</a>
           </div>
         </div>
         <div class="hero-img">
-          <img src="images/team-moving.jpg" alt="Spoko Service Cariboo — moving assistance team" width="600" height="450" loading="eager">
+          <img src="images/team-moving.jpg" alt="Spoko Service Cariboo — property services team" width="600" height="450" loading="eager">
         </div>
       </div>
     </div>
@@ -113,7 +153,7 @@
         <div class="service-card">
           <img src="images/paint-room1-ba.jpg" alt="Interior and exterior painting in Quesnel" width="400" height="250" loading="lazy">
           <div class="service-card-body">
-            <h3><a href="painting.html">Interior & Exterior Painting</a></h3>
+            <h3><a href="/painting">Interior & Exterior Painting</a></h3>
             <p>Walls, ceilings, fences, decks, and siding. Prep work included. Clean lines, no shortcuts.</p>
           </div>
         </div>
@@ -121,7 +161,7 @@
         <div class="service-card">
           <img src="images/fence-build-after1.jpg" alt="Fence building and painting in Quesnel BC" width="400" height="250" loading="lazy">
           <div class="service-card-body">
-            <h3><a href="fencing.html">Fencing</a></h3>
+            <h3><a href="/fencing">Fencing</a></h3>
             <p>Fence building, painting, staining, pressure washing, repairs, and new fence builds across Quesnel.</p>
           </div>
         </div>
@@ -129,7 +169,7 @@
         <div class="service-card">
           <img src="images/yard-passage-ba.jpg" alt="Landscaping and yard care in Quesnel BC" width="400" height="250" loading="lazy">
           <div class="service-card-body">
-            <h3><a href="landscaping.html">Landscaping & Yard Care</a></h3>
+            <h3><a href="/landscaping">Landscaping & Yard Care</a></h3>
             <p>Spring cleanups, garden beds, retaining walls, pressure washing, and full yard transformations.</p>
           </div>
         </div>
@@ -137,7 +177,7 @@
         <div class="service-card">
           <img src="images/gutter-close-ba.jpg" alt="Gutter cleaning and roof moss removal Quesnel" width="400" height="250" loading="lazy">
           <div class="service-card-body">
-            <h3><a href="gutter-cleaning.html">Gutter & Roof Cleaning</a></h3>
+            <h3><a href="/gutter-cleaning">Gutter & Roof Cleaning</a></h3>
             <p>Gutter flush-outs, moss removal, downspout clearing, and roof debris cleanup.</p>
           </div>
         </div>
@@ -145,7 +185,7 @@
         <div class="service-card">
           <img src="images/team-moving.jpg" alt="Labour assistance and odd jobs in Quesnel BC" width="400" height="250" loading="lazy">
           <div class="service-card-body">
-            <h3><a href="labour.html">Labour Assistance</a></h3>
+            <h3><a href="/labour">Labour Assistance</a></h3>
             <p>Deck building, window cleaning, yard work, and general labour for any property job.</p>
           </div>
         </div>
@@ -167,7 +207,7 @@
           <p>We started because we saw too many properties around Quesnel that needed help — and not enough people willing to do the work properly. Every job we take, we finish. No half-measures, no excuses.</p>
           <p>We're insured, covered by WorkSafeBC, and we stand behind our work. If something isn't right, we come back and fix it.</p>
           <div style="margin-top:24px;">
-            <a href="contact.html" class="btn btn-dark">Get in Touch</a>
+            <a href="/contact" class="btn btn-dark">Get in Touch</a>
           </div>
         </div>
       </div>
@@ -206,7 +246,7 @@
       <p>Free estimates for any job. Call us or send a message — we'll get back to you the same day.</p>
       <a href="tel:2509257372" class="cta-phone">(250) 925-7372</a>
       <div class="btn-group" style="justify-content:center;">
-        <a href="contact.html" class="btn btn-dark">Request a Quote</a>
+        <a href="/contact" class="btn btn-dark">Request a Quote</a>
         <a href="mailto:spokoservicecariboo@gmail.com" class="btn btn-dark">Email Us</a>
       </div>
     </div>
@@ -223,11 +263,11 @@
         <div>
           <h4>Services</h4>
           <div class="footer-links">
-            <a href="painting.html">Painting</a>
-            <a href="fencing.html">Fencing</a>
-            <a href="landscaping.html">Landscaping</a>
-            <a href="gutter-cleaning.html">Gutter Cleaning</a>
-            <a href="labour.html">Labour Help</a>
+            <a href="/painting">Painting</a>
+            <a href="/fencing">Fencing</a>
+            <a href="/landscaping">Landscaping</a>
+            <a href="/gutter-cleaning">Gutter Cleaning</a>
+            <a href="/labour">Labour Help</a>
           </div>
         </div>
         <div>
